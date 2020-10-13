@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN npm install
-RUN npm install tsc-watch -g
+RUN npm install typescript tsc-watch -g
 
 EXPOSE 5000
 
