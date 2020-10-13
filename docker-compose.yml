@@ -91,10 +91,10 @@
 version: "3"
 services:
   react-app:
-    image: tunein-client
-    # build:
-    #   context: ./client
-    #   dockerfile: Dockerfile
+    # image: tunein-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
     stdin_open: true
     ports:
       - "3000:3000"
