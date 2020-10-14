@@ -5,7 +5,7 @@ WORKDIR /server
 
 COPY *.json ./
 
-RUN rm -R node_modules/
+RUN rm -R -f node_modules/
 RUN npm install
 RUN npm install typescript tsc-watch -g
 
