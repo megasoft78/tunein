@@ -2,6 +2,8 @@
 /.pnp
 .pnp.js
 .history
+mongo-config
+mongo-data
 
 # testing
 /coverage
@@ -19,3 +21,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.js

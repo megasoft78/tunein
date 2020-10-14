@@ -16,14 +16,12 @@
 
 FROM node:14-slim
 
-WORKDIR /usr/src/app
+WORKDIR /client
 
-COPY ./package.json ./
-COPY ./package-lock.json ./
+COPY *.json ./
 
+RUN rm -R node_modules/
 RUN npm install
-
-COPY . .
 
 EXPOSE 3000
 

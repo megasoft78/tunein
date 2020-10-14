@@ -21,9 +21,9 @@ const PORT: number = parseInt(process.env.PORT as string, 10);
 
 const app = express();
 
-for (let i = 0; i <= 20; i++) {
-	console.log("**********************************");
-}
+// for (let i = 0; i <= 20; i++) {
+console.log("**********************************");
+// }
 /**
  *  App Configuration
  */

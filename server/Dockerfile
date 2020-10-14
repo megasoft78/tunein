@@ -1,10 +1,11 @@
 
 FROM node:14-slim
 
-WORKDIR /usr/src/app
+WORKDIR /server
 
-COPY . .
+COPY *.json ./
 
+RUN rm -R node_modules/
 RUN npm install
 RUN npm install typescript tsc-watch -g
 
